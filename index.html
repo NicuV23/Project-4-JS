@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Create boxes for the X or O -->
+    <div id="board">
+      <div class="square" onclick="handleClick(0)"></div>
+      <div class="square" onclick="handleClick(1)"></div>
+      <div class="square" onclick="handleClick(2)"></div>
+      <div class="square" onclick="handleClick(3)"></div>
+      <div class="square" onclick="handleClick(4)"></div>
+      <div class="square" onclick="handleClick(5)"></div>
+      <div class="square" onclick="handleClick(6)"></div>
+      <div class="square" onclick="handleClick(7)"></div>
+      <div class="square" onclick="handleClick(8)"></div>
+    </div>
+    <!-- displaying the score -->
+    <div id="score">
+      Score: X - <span id="playerXScore">0</span>, O -
+      <span id="playerOScore">0</span>
+    </div>
+    <!-- restarting the game -->
+    <button id="restartButton" onclick="restartGame()">Restart</button>
+    <script src="index.js"></script>
+  </body>
+</html>
